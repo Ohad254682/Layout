@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onclick="closeMenu()">
+    <header>
+        <div class="flex align-center space-between wrapper header-wrapper">
+            <div class="logo"><img src="blogin.png" alt=""></div>
+            <button id="menu-btn" class="hide" onclick="openMenu(event)">☰</button>
+            <ul class="nav-menu clean-list flex space-between align-center">
+                <li><a class="flex align-center" href="#">Journal</a></li>
+                <li><a class="flex align-center" href="#">About</a></li>
+                <li><a class="flex align-center" href="#">Work</a></li>
+                <li><a class="flex align-center" href="#">Contact</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+    <div class="wrapper">
+
+        <div class="empty-space"></div>
+
+        <div class="post flex">
+            <img src="Layer_2.png" alt="">
+            <div class="post-content flex flex column space-between">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
+                    aspernatur,
+                    provident amet sunt
+                    dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
+                    aspernatur,
+                    provident amet sunt
+                    dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
+                <button type="button">Continue Reading →</button>
+            </div>
+        </div>
+
+
+        <div class="post flex">
+            <img src="Layer_3.png" alt="">
+            <div class="post-content flex flex column space-between">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
+                    aspernatur,
+                    provident amet sunt
+                    dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
+                    aspernatur,
+                    provident amet sunt
+                    dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
+                <button type="button">Continue Reading →</button>
+            </div>
+        </div>
+
+
+        <div class="post flex">
+            <img src="Layer_4.png" alt="">
+            <div class="post-content flex flex column space-between">
+                <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
+                    aspernatur,
+                    provident amet sunt
+                    dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
+                    aspernatur,
+                    provident amet sunt
+                    dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
+                <button type="button">Continue Reading →</button>
+            </div>
+        </div>
+
+        <div class="post-nav flex space-between">
+            <p>← Prev</p>
+            <p>Next →</p>
+        </div>
+    </div>
+
+    <div class="subscription-modal flex column align-center" hidden>
+        <button class="close-modal align-self-end" onclick="closeSubscriptionModal()">X</button>
+        <h3>Join us to get access to the latest stories!</h3>
+        <form onsubmit="sumbitEmailForSubscription(event)">
+            Enter Your Email: <input type="email">
+            <p class="user-msg-subscribing"></p>
+            <input type="submit">
+        </form>
+    </div>
+
+
+
+
+    <footer class="flex align-center justify-center column">
+        <img src="blogin-dark.png" alt="">
+        <small>©2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></small>
+        <div class="buttons flex justify-center align-center">
+            <button class="flex justify-center align-center"><img src="facebook-logo.png" alt=""></button>
+            <button class="flex justify-center align-center"><img src="twitter-logo.png" alt=""></button>
+            <button class="flex justify-center align-center"><img src="be-logo.png" alt=""></button>
+            <button class="flex justify-center align-center"><img src="unknown-logo.png" alt=""></button>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+/* Fonts */
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(Lato-Bold.ttf);
+}
+
+/* Base */
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+height: 130px;
+box-shadow: inset 0 -6px 0 #1e1e1e;
+background-color: #292929;
+}
+
+footer{
+height: 315px;
+box-shadow: inset 0 1px 0 #e1e0e0;
+background-color: #f8f8f8;
+}
+
+/* Layout */
+
+.wrapper {
+    max-width: 980px;
+    margin: 0 auto;
+    border-right:1px #e1e0e0;
+    border-left: 1px #e1e0e0;
+}
+
+
+body>.wrapper{
+    border-right:1px solid #e1e0e0;
+    border-left:1px solid #e1e0e0;
+}
+
+
+/* screens */
+
+.subscription-modal{
+    position: fixed;
+    top:33%;
+    left:33%;
+    z-index:1;
+    width:33vw;
+    height:33vh;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: Lato-Bold;
+
+}
+
+/*  Navbar */
+
+.nav-menu>li {
+    height:100%;
+}
+
+.nav-menu li a:nth-last-child(1){
+    box-shadow:  -1px 0 0 #1d1d1d, inset -1px 0 0 #1d1d1d;
+}
+
+.header-wrapper{
+    height:100%;
+}
+
+.nav-menu li a{
+text-shadow: 0 1px 0 #1e1e1e;
+color: #58c93a;
+font-family: Lato-Bold;
+letter-spacing: 0.8px;
+padding-right: 40px;
+padding-left: 40px;
+box-shadow:  -1px 0 0 #1d1d1d;
+height:100%;
+text-decoration: none;
+}
+
+.nav-menu li a:hover{
+    box-shadow:  -1px 0 0 #1d1d1d, inset 0 -6px 0 #58c93a;;
+}
+
+.nav-menu li a:active{
+    background-color: #58c93a;;
+}
+
+.nav-menu{
+    height:100%;
+}
+
+
+
+
+
+
+/* Main Content */
+
+.empty-space{
+    padding-bottom:80px;
+}
+.post-content{
+    margin-left:40px;
+    margin-right:25px;
+    font-family: Lato-Light;
+}
+
+.post h2{
+    margin:0px;
+    font-family: Lato-Bold;
+    text-transform: uppercase;
+    font-size:1.75rem;
+}
+.post{
+    margin-bottom: 80px;
+}
+
+.post button{
+width: 210px;
+height: 40px;
+}
+
+.post button{
+    font-family: Lato-Bold;
+    background-color: transparent;
+    border:2px solid #c2c2c2;
+    color:#c2c2c2;
+    border-radius:25%;
+}
+
+.post button:hover{
+    border: 2px solid #58c93a;
+    color: #58c93a;
+}
+
+
+/*post-nav*/
+.post-nav{
+    font-family: Lato-Bold;
+    border-top:1px solid #e1e0e0;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.post-nav p:nth-child(1){
+    margin-left:30px;
+}
+
+.post-nav p:nth-child(2){
+    margin-right:30px;
+}
+
+
+/* Footer */
+
+.buttons button:not(:first-child) {
+    margin-left: 20px;
+}
+
+.buttons button{
+    width:40px;
+    height:40px;
+    border:0px;
+}
+
+.buttons button:hover{
+    background-color: #516fad;
+}
+
+footer>*:not(:last-child){
+    margin-bottom:35px;
+}
+
+small span{
+    font-family: Lato-Bold;
+}
+
+small{
+    text-align:center;
+}
+
+/* Helpers */
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hide{
+    display:none;
+}
+
+/* flex helpers */
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around{
+    justify-content:space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-self-end{
+    align-self: flex-end;
+}
+
+/* list helpers */
+
+/* Media Queries */
+
+
+@media (max-width: 740px) {
+
+    .post{
+        flex-direction:column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.9);
+        border-left: 1px solid #c3c3c3;
+        width: 270px;
+        transform: translate(100%, 0);
+        transition: transform .6s;
+    }
+
+    .header-wrapper>button{
+        display:inline;
+        color:white;
+        margin-right:10px;
+       font-size: 40px;
+       background-color:transparent;
+       border:0px;
+    }
+
+    .menu-open {
+        transform:initial;
+    }
+    .nav-menu li a{
+        padding:0px;
+        width:100%;
+        text-align:center;
+    }
+    .nav-menu li{
+        display:block;
+        width:100%;
+    }
+}

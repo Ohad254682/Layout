@@ -102,18 +102,18 @@ text-decoration: none;
 .dropdown-menu{
     background-color: #1d1d1d;
     position:absolute;
-    display: none;
+    display: block;
 }
 
 .dropdown-menu a{
     display:block;
 }
 
-.dropdown-container{
-    position:relative;
+.dropdown-menu{
+    display:none;
 }
 
-.dropdown-container:hover .dropdown-menu {
+.nav-menu li:first-child:hover + .dropdown-menu {
     display: block;
   }
 

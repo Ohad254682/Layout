@@ -16,7 +16,17 @@
             <div class="logo"><img src="Blogin.png" alt=""></div>
             <button id="menu-btn" class="hide" onclick="openMenu(event)">☰</button>
             <ul class="nav-menu clean-list flex space-between align-center">
-                <li><a class="flex align-center" href="#">Journal</a></li>
+                
+                <div class="dropdown-container">
+                    <li><a class=" flex align-center" href="#">Journal</a></li>
+                    <ul class="dropdown-menu clean clean-list">
+                        <li><a class="text-align-center">October 2016</a></li>
+                        <li><a class="text-align-center">January 2017</a></li>
+                        <li><a class="text-align-center">April 2017</a></li>
+                        <li><a class="text-align-center">July 2017</a></li>
+                    </ul>
+                </div>
+
                 <li><a class="flex align-center" href="#">About</a></li>
                 <li><a class="flex align-center" href="#">Work</a></li>
                 <li><a class="flex align-center" href="#">Contact</a></li>
@@ -28,9 +38,9 @@
 
         <div class="empty-space"></div>
 
-        <div class="post flex">
+        <div class="post flex align-flex-start">
             <img src="Layer_2.png" alt="">
-            <div class="post-content flex flex column space-between">
+            <div class="post-content flex column space-between ">
                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
                     aspernatur,
@@ -40,14 +50,14 @@
                     aspernatur,
                     provident amet sunt
                     dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
-                <button type="button">Continue Reading →</button>
+                <button type="button">Continue Reading <span class="hide">→</span></button>
             </div>
         </div>
 
 
         <div class="post flex">
             <img src="Layer_3.png" alt="">
-            <div class="post-content flex flex column space-between">
+            <div class="post-content flex column flex-start space-between">
                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
                     aspernatur,
@@ -57,14 +67,14 @@
                     aspernatur,
                     provident amet sunt
                     dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
-                <button type="button">Continue Reading →</button>
+                <button type="button">Continue Reading <span class="hide">→</span></button>
             </div>
         </div>
 
 
         <div class="post flex">
             <img src="Layer_4.png" alt="">
-            <div class="post-content flex flex column space-between">
+            <div class="post-content flex column space-between">
                 <h2>Lorem ipsum dolor sit amet consectetur.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, explicabo. Vel obcaecati odit
                     aspernatur,
@@ -74,7 +84,7 @@
                     aspernatur,
                     provident amet sunt
                     dolore magnam cum iste id libero quas necessitatibus maxime? Autem nostrum dolorum sapiente?</p>
-                <button type="button">Continue Reading →</button>
+                <button type="button">Continue Reading <span class="hide">→</span></button>
             </div>
         </div>
 
@@ -97,7 +107,7 @@
 
 
 
-    <footer class="flex align-center justify-center column">
+    <footer class="flex align-center  justify-center column">
         <img src="Blogin-dark.png" alt="">
         <small>©2014 Blogin.com - All Rights Reserved - Find more free Templates at <span>Pixelhint.com</span></small>
         <div class="buttons flex justify-center align-center">

@@ -24,6 +24,12 @@ function showNavBar() {
     }
 }
 
+$('.post button').hover(function(){
+    $('.post button span').show();
+},function(){
+    $('.post button span').hide();
+})
+
 $('.post-content>button').click(openSubscriptionModal);
 
 function openSubscriptionModal(){

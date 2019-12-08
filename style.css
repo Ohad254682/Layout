@@ -97,6 +97,25 @@ text-decoration: none;
 }
 
 
+/*Dropdown*/
+
+.dropdown-menu{
+    background-color: #1d1d1d;
+    position:absolute;
+    display: none;
+}
+
+.dropdown-menu a{
+    display:block;
+}
+
+.dropdown-container{
+    position:relative;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    display: block;
+  }
 
 
 
@@ -120,24 +139,36 @@ text-decoration: none;
 }
 .post{
     margin-bottom: 80px;
+   
 }
 
 .post button{
-width: 210px;
-height: 40px;
-}
-
-.post button{
+    width: 185px;
+    height: 40px;
+    color: #c2c1c1;
+    line-height: 20px;
+    /* Text style for "Continue R" */
+    letter-spacing: 0.48px;
     font-family: Lato-Bold;
     background-color: transparent;
     border:2px solid #c2c2c2;
-    color:#c2c2c2;
-    border-radius:25%;
+    border-radius:25px;
 }
 
 .post button:hover{
     border: 2px solid #58c93a;
     color: #58c93a;
+    width:210px;
+
+}
+
+.post-content{
+    flex-grow:1;
+}
+
+.post img{
+    object-fit: cover;
+    width:50%;
 }
 
 
@@ -155,6 +186,10 @@ height: 40px;
 
 .post-nav p:nth-child(2){
     margin-right:30px;
+}
+
+.post-nav p:hover{
+    color:#58c93a;
 }
 
 
@@ -193,8 +228,14 @@ small{
     list-style-type: none;
 }
 
+
+
 .hide{
     display:none;
+}
+
+.text-align-center{
+    text-align: center;
 }
 
 /* flex helpers */
@@ -231,6 +272,10 @@ small{
     align-self: flex-end;
 }
 
+.align-flex-start{
+    align-items:flex-start;
+}
+
 /* list helpers */
 
 /* Media Queries */
@@ -240,6 +285,10 @@ small{
 
     .post{
         flex-direction:column;
+    }
+
+    .post img{
+        width:100%;
     }
 
     .nav-menu {
